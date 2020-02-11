@@ -8,7 +8,7 @@ export interface BlockData {
     extraData: number[];
     transactionsRoot: H256;
     stateRoot: H256;
-    validatorSetRoot: H256;
+    nextValidatorSetHash: H256;
     score: U256;
     seal: number[][];
     hash: H256;
@@ -22,7 +22,7 @@ export interface BlockJSON {
     extraData: number[];
     transactionsRoot: string;
     stateRoot: string;
-    validatorSetRoot: string;
+    nextValidatorSetHash: string;
     score: string;
     seal: number[][];
     hash: string;
@@ -40,7 +40,7 @@ export declare class Block {
     extraData: number[];
     transactionsRoot: H256;
     stateRoot: H256;
-    validatorSetRoot: H256;
+    nextValidatorSetHash: H256;
     score: U256;
     seal: number[][];
     hash: H256;
